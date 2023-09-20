@@ -1,17 +1,19 @@
 # 141
 #include <iostream>
+#include <iostream>
 using namespace std;
  
 int main()
 {
-    int a = 5, b = 10, temp;
+    
+    int a = 5, b = 10;
  
     cout << "交换之前：" << endl;
     cout << "a = " << a << ", b = " << b << endl;
  
-    temp = a;
-    a = b;
-    b = temp;
+    a = a + b;
+    b = a - b;
+    a = a - b;
  
     cout << "\n交换之后：" << endl;
     cout << "a = " << a << ", b = " << b << endl;
